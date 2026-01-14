@@ -1,0 +1,57 @@
+// src/app/navbar/navbar.scss
+.navbar {
+    background-color: #333;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 0;
+
+    &:hover {
+        color: #4caf50;
+    }
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;
+
+        a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: #555;
+                color: #4caf50;
+            }
+
+            &.active {
+                background-color: #4caf50;
+                color: white;
+            }
+        }
+    }
+}

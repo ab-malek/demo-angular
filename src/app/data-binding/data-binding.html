@@ -1,0 +1,11 @@
+<div class="row">
+    <h1 [ngClass]="textColor">This is two way data binding</h1>
+    <input type="text" [(ngModel)]="textColor">
+
+    @if (isEligible) {
+    <p class="text-success fs-1">This user is eligible for subscription.</p>
+    }
+    @else {
+        <p class="text-danger fs-1">This user is not eligible for subscription.</p>
+    }
+</div>  

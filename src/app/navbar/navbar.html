@@ -1,0 +1,13 @@
+<!-- src/app/navbar/navbar.html -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a routerLink="/" class="navbar-brand">Demo App</a>
+        <ul class="navbar-menu">
+            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <li><a routerLink="/data-binding" routerLinkActive="active">Data Binding</a></li>
+            <li><a routerLink="/reactive-forms" routerLinkActive="active">Reactive Forms</a></li>
+            <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
+
+        </ul>
+    </div>
+</nav>

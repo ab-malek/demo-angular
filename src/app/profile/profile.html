@@ -1,0 +1,17 @@
+
+
+<div class="container">
+    <h2>User Profile</h2>
+    <p><strong>ID:</strong> {{ dammyData.id }}</p>
+    <p><strong>Name:</strong> {{ dammyData.name }}</p>
+    <p><strong>Email:</strong> {{ dammyData.email }}</p>
+    <p><strong>Role:</strong> {{ dammyData.role }}</p>
+
+
+    @if (isEligible) {
+    <p class="text-success fs-1">This user is eligible for subscription.</p>
+    }
+    @else {
+        <p class="text-danger fs-1">This user is not eligible for subscription.</p>
+    }
+</div>
