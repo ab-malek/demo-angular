@@ -1,5 +1,3 @@
-
-
 <div class="container">
     <h2>User Profile</h2>
     <p><strong>ID:</strong> {{ dammyData.id }}</p>
@@ -12,6 +10,22 @@
     <p class="text-success fs-1">This user is eligible for subscription.</p>
     }
     @else {
-        <p class="text-danger fs-1">This user is not eligible for subscription.</p>
+    <p class="text-danger fs-1">This user is not eligible for subscription.</p>
     }
+</div>
+
+
+
+
+
+<div class="container">
+    <h2>User Profile from API</h2>
+    <ul>
+        @for (user of userApiData; track $index) {
+        <li>{{user.id}}</li>
+        <li>{{user.name}}</li>
+        <li>{{user.username}}</li>
+        <li>{{user.email}}</li>
+        }
+    </ul>
 </div>
